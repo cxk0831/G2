@@ -18,17 +18,17 @@ registerShape('point', 'breath-point', {
       },
     });
 
-    point1.animate(
-      {
-        r: r * 1.2,
-        opacity: 0,
-      },
-      {
-        duration: 4500,
-        easing: 'easeLinear',
-        repeat: true,
-      }
-    );
+    // point1.animate(
+    //   {
+    //     r: r * 1.2,
+    //     opacity: 0,
+    //   },
+    //   {
+    //     duration: 4500,
+    //     easing: 'easeLinear',
+    //     repeat: true,
+    //   }
+    // );
     return group;
   },
 });

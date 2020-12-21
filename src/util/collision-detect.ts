@@ -1,9 +1,8 @@
-import { vec2 } from '@antv/matrix-util'; 
+import { vec2 } from '@antv/matrix-util';
 import { BBox, Point } from '../dependents';
 
 const { dot } = vec2;
 type Vec2 = [number, number];
-
 
 type Box = Pick<BBox, 'x' | 'y' | 'width' | 'height'> & { rotation?: number };
 
@@ -117,7 +116,6 @@ export function isIntersectRect(box1: Box, box2: Box, margin: number = 0): boole
  * - 原理: 分离轴定律
  */
 export function isIntersect(box1: Box, box2: Box) {
-
   // 如果两个矩形没有旋转，使用快速判断
   if (!box1.rotation && !box2.rotation) {
     return isIntersectRect(box1, box2);

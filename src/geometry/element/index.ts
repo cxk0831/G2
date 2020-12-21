@@ -369,7 +369,7 @@ export default class Element extends Base {
             isFunction(cfg.callback) && cfg.callback();
             this.geometry?.emit(GEOMETRY_LIFE_CIRCLE.AFTER_DRAW_ANIMATE);
           },
-        }
+        };
       }
       return cfg;
     }
@@ -471,7 +471,7 @@ export default class Element extends Base {
         each(states, (state) => {
           const style = this.getStateStyle(state, name || index); // 如果用户没有设置 name，则默认根据索引值
           targetShape.attr(style);
-        })
+        });
       }
       const newAttrs = getReplaceAttrs(sourceShape as IShape, targetShape as IShape);
 

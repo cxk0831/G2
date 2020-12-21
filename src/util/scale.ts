@@ -86,9 +86,13 @@ export function getName(scale: Scale): string {
  * 根据 scale values 和 coordinate 获取分类默认 range
  * @param scale 需要获取的 scale 实例
  * @param coordinate coordinate 实例
- * @param theme theme 
+ * @param theme theme
  */
-export function getDefaultCategoryScaleRange(scale: Scale, coordinate: Coordinate, theme: ViewCfg['theme']): Scale['range'] {
+export function getDefaultCategoryScaleRange(
+  scale: Scale,
+  coordinate: Coordinate,
+  theme: ViewCfg['theme']
+): Scale['range'] {
   const { values } = scale;
   const count = values.length;
   let range;
